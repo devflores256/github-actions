@@ -17,11 +17,11 @@ jobs:
       run: echo "Hola Mundo" >> hola.txt
 
     - name: Read file
-      run: car hola.txt
+      run: Cat hola.txt
 
   other:
     runs-on: ubuntu-latest
-
+    needs.: [hola]
     steps:
     - name: LS
       run: ls -al
