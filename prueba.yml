@@ -20,7 +20,7 @@ jobs:
       run: car hola.txt
 
   other:
-    runs-on: ubuntu latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: LS
